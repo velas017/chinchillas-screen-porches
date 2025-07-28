@@ -100,7 +100,7 @@
 }
 
 .quoteButton {
-  background-color: #222222;
+  background-color: #ff6b6b;
   color: #ffffff;
   border: none;
   padding: 12px 24px;
@@ -108,13 +108,15 @@
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
 }
 
 .quoteButton:hover {
-  background-color: #000000;
-  transform: scale(1.02);
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
 }
 
 .mobileMenuToggle {
@@ -183,7 +185,7 @@
 }
 
 .mobileQuoteButton {
-  background-color: #222222;
+  background-color: #ff6b6b;
   color: #ffffff;
   border: none;
   padding: 14px 24px;
@@ -193,11 +195,14 @@
   cursor: pointer;
   width: 100%;
   margin-top: 16px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
 }
 
 .mobileQuoteButton:hover {
-  background-color: #000000;
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
 }
 
 /* Tablet styles */
