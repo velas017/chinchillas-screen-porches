@@ -1,167 +1,120 @@
 .page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  flex: 1;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+.contentSection {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
+.contentSection h2 {
+  font-size: 36px;
   font-weight: 600;
+  color: #222222;
+  margin-bottom: 16px;
 }
 
-.ctas {
-  display: flex;
-  gap: 16px;
+.contentSection p {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.6;
 }
 
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
+.callButtonContainer {
   display: flex;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin: -40px auto 0;
+  padding: 0 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.callButton {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 8px;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
   font-size: 16px;
-  line-height: 20px;
   font-weight: 500;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+.callButton:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
-}
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
+.callButton svg {
   flex-shrink: 0;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
+/* Tablet styles */
+@media (max-width: 1024px) {
   .main {
-    align-items: center;
+    padding: 40px 20px;
   }
 
-  .main ol {
-    text-align: center;
+  .contentSection h2 {
+    font-size: 32px;
   }
 
-  .ctas {
-    flex-direction: column;
+  .contentSection p {
+    font-size: 16px;
   }
 
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  .callButtonContainer {
+    padding: 0 30px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+/* Mobile styles */
+@media (max-width: 768px) {
+  .main {
+    padding: 30px 16px;
+  }
+
+  .contentSection h2 {
+    font-size: 28px;
+  }
+
+  .contentSection p {
+    font-size: 16px;
+  }
+
+  .callButtonContainer {
+    padding: 0 20px;
+    margin-top: -30px;
+  }
+
+  .callButton {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .contentSection h2 {
+    font-size: 24px;
+  }
+
+  .contentSection p {
+    font-size: 14px;
   }
 }
