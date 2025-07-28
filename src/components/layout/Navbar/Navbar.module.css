@@ -1,0 +1,286 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  height: 80px;
+}
+
+.container {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 0 80px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  color: #222222;
+  transition: opacity 0.2s ease;
+  text-align: center;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logoTop {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logoBottom {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.centerSection {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.navLink {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  background-color: #f7f7f7;
+}
+
+.navLinkActive {
+  color: #000000;
+  font-weight: 600;
+  position: relative;
+}
+
+.navLinkActive::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.quoteButton {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.quoteButton:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
+}
+
+.mobileMenuToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #222222;
+  transition: all 0.3s ease;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.mobileNavLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobileNavLink {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 0 12px 12px;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.mobileNavLink:hover {
+  opacity: 0.7;
+}
+
+.mobileNavLinkActive {
+  color: #000000;
+  font-weight: 600;
+  position: relative;
+}
+
+.mobileNavLinkActive::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #000000;
+}
+
+.mobileQuoteButton {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.mobileQuoteButton:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .centerSection {
+    flex: 3;
+  }
+
+  .navLinks {
+    gap: 24px;
+  }
+
+  .navLink {
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+    position: relative;
+  }
+
+  .leftSection {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex: none;
+  }
+
+  .centerSection,
+  .rightSection .quoteButton {
+    display: none;
+  }
+
+  .mobileMenuToggle {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .logoTop {
+    font-size: 18px;
+  }
+
+  .logoBottom {
+    font-size: 12px;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .navbar {
+    height: 64px;
+  }
+
+  .mobileMenu {
+    top: 64px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .logoTop {
+    font-size: 16px;
+  }
+
+  .logoBottom {
+    font-size: 11px;
+  }
+}

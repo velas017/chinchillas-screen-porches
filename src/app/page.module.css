@@ -1,0 +1,120 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contentSection {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contentSection h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+.contentSection p {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.callButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin: -40px auto 0;
+  padding: 0 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.callButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+}
+
+.callButton:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
+}
+
+.callButton svg {
+  flex-shrink: 0;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .main {
+    padding: 40px 20px;
+  }
+
+  .contentSection h2 {
+    font-size: 32px;
+  }
+
+  .contentSection p {
+    font-size: 16px;
+  }
+
+  .callButtonContainer {
+    padding: 0 30px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .main {
+    padding: 30px 16px;
+  }
+
+  .contentSection h2 {
+    font-size: 28px;
+  }
+
+  .contentSection p {
+    font-size: 16px;
+  }
+
+  .callButtonContainer {
+    padding: 0 20px;
+    margin-top: -30px;
+  }
+
+  .callButton {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .contentSection h2 {
+    font-size: 24px;
+  }
+
+  .contentSection p {
+    font-size: 14px;
+  }
+}
