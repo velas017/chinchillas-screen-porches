@@ -43,9 +43,9 @@ const Navbar = () => {
         </div>
 
         <div className={styles.rightSection}>
-          <button className={styles.quoteButton}>
+          <Link href="/contact" className={styles.quoteButton}>
             Request a Quote
-          </button>
+          </Link>
         </div>
 
         <button 
@@ -74,9 +74,13 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <button className={styles.mobileQuoteButton}>
+              <Link 
+                href="/contact" 
+                className={styles.mobileQuoteButton}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
                 Request a Quote
-              </button>
+              </Link>
             </li>
           </ul>
         </div>
