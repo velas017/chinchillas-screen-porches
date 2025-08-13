@@ -23,13 +23,15 @@ const servicesData: ServiceInfo[] = [
   {
     id: 'sunrooms',
     title: 'Sunrooms',
-    description: 'Add valuable living space to your home with our beautiful sunrooms. Enjoy natural light and outdoor views while staying comfortable in any weather, perfect for relaxation or entertaining.',
+    description: 'Are there times when you want to surround yourself with outdoor scenery and bask in natural light but don\'t feel up for dealing with the weather conditions outside? Rather than having to decide between the beauty of the outdoors and the comfort of indoors, you can strike the perfect balance by relaxing in an insulated sunroom professionally installed by Chinchilla Porches.',
     features: [
-      'Additional year-round living space',
-      'Maximum natural light and outdoor views',
-      'Climate-controlled comfort in any season',
-      'Variety of styles and configurations available',
-      'Significant increase in home value'
+      'Full insulation for year-round comfort',
+      'Maximum sunlight exposure through large glass panels',
+      'Complete protection from outdoor elements',
+      'Customizable styles including all-glass roof conservatories',
+      'Power outlet installation for TVs and electronics',
+      'Additional doors and ceiling fans available',
+      'Seamlessly integrates as a true home extension'
     ],
     images: [
       {
@@ -52,13 +54,14 @@ const servicesData: ServiceInfo[] = [
   {
     id: 'screen-rooms',
     title: 'Screen Rooms',
-    description: 'Transform your outdoor space into a comfortable, bug-free retreat with our custom screen rooms. Perfect for enjoying the outdoors while staying protected from insects and weather elements.',
+    description: 'A cool breeze on a beautiful, sunny day feels so much better when it doesn\'t come with any tiny, pesky insects to bug you. With a screen enclosure installed by Chinchilla Porches, your patio or porch will be completely protected from pests and enhanced with a stylish new look that\'s sure to become the highlight of your backyard.',
     features: [
-      'Custom designs to match your home\'s architecture',
-      'High-quality screening materials for maximum durability',
-      'Professional installation with attention to detail',
-      'Bug-free outdoor enjoyment year-round',
-      'Increased home value and living space'
+      'Complete protection from insects while maintaining fresh air flow',
+      'Ultra-durable frames with high-grade fiberglass mesh screens',
+      'Thermal roofing systems for added comfort and insulation',
+      'Wide variety of colors, textures, and design options',
+      'Perfect integration with existing home aesthetic',
+      'Risk-free experience with best-in-class customer service'
     ],
     images: [
       {
@@ -81,13 +84,14 @@ const servicesData: ServiceInfo[] = [
   {
     id: 'pergolas',
     title: 'Pergolas',
-    description: 'Create an elegant outdoor living space with our custom pergolas. These beautiful structures provide the perfect balance of sun and shade while adding architectural interest to your backyard.',
+    description: 'As you plan a design for your backyard, pay special attention to giving the space visual interest. For many homeowners, a pergola installed by Chinchilla Porches proves to be the perfect backyard addition. We can build our pergolas over patios, gardens, and virtually any other outdoor settings, where they will not only enhance the appearance of the space, but also provide partial shade over the covered area for added comfort.',
     features: [
-      'Custom designs in wood, vinyl, or aluminum',
-      'Adjustable louvers for shade control',
-      'Integrated lighting and fan options',
-      'Weather-resistant materials and finishes',
-      'Perfect for outdoor dining and entertaining'
+      'Aluminum construction - fully weather resistant',
+      'Never needs painting - essentially maintenance free',
+      'Withstands rain, sun, wind without cracking or warping',
+      'Available in diverse variety of sizes, shapes, styles, and colors',
+      'Creates inviting atmosphere for outdoor activities',
+      'Transforms ordinary backyards into personal oases'
     ],
     images: [
       {
@@ -110,13 +114,14 @@ const servicesData: ServiceInfo[] = [
   {
     id: 'patio-covers',
     title: 'Patio Covers',
-    description: 'Protect your patio area and outdoor furniture with our stylish, durable patio covers. Enjoy your outdoor space rain or shine with complete weather protection.',
+    description: 'How many times have you wanted to relax on your outdoor patio, but the sun feels downright oppressive or rain begins to fall? With a patio cover installed by Chinchilla Porches, you can enjoy effective protection from sun and rain, enabling you to invite people over for outdoor get-togethers with confidence, knowing that your plans can stay intact regardless of weather.',
     features: [
-      'Complete weather protection for year-round use',
-      'Various styles: solid, lattice, or combination',
-      'Maintenance-free materials available',
-      'Custom sizing to fit any patio',
-      'Integrated gutter systems for water management'
+      'Effective protection from both sun and rain',
+      'Thermal roofs that help keep covered space cooler',
+      'Customizable with shingles to blend with your home',
+      'Ceiling fan options for enhanced comfort',
+      'Can be enclosed later to create screen room or sunroom',
+      'Year-round outdoor enjoyment without weather concerns'
     ],
     images: [
       {
@@ -139,13 +144,15 @@ const servicesData: ServiceInfo[] = [
   {
     id: 'pool-enclosures',
     title: 'Pool Enclosures',
-    description: 'Extend your swimming season and reduce maintenance with our premium pool enclosures. Protect your pool from debris while creating a luxurious, resort-like atmosphere in your backyard.',
+    description: 'Today\'s pool enclosures have been redesigned to meet the most stringent building codes. A pool enclosure is one solution to the high cost associated with annual pool care. A Chinchilla Porches pool enclosure helps reduce the sun\'s effect on pool chemicals while protecting from debris, adds beauty and additional safety, giving you lower-cost pool maintenance, peace of mind, and more time to enjoy your pool.',
     features: [
-      'Year-round pool enjoyment and protection',
-      'Reduced pool maintenance and chemical costs',
-      'UV protection and debris prevention',
-      'Custom designs with various panel options',
-      'Enhanced safety for children and pets'
+      'Keeps mosquitoes, wasps, and other flying insects out',
+      'No debris in pool - leaves, branches, and dead bugs',
+      'All-aluminum frame requires NO maintenance',
+      'Self-latching and closing doors for safety',
+      'Saves money on costly pool chemicals',
+      'Extends the life of pool equipment',
+      'Keeps neighborhood children away from the pool'
     ],
     images: [
       {
