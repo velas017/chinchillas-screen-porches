@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import styles from './HeroCarousel.module.css'
 
@@ -50,6 +50,14 @@ const HeroCarousel = ({
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(false)
 
+  const handleNextSlide = useCallback(() => {
+    setIsTransitioning(true)
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length)
+      setIsTransitioning(false)
+    }, 300)
+  }, [slides.length])
+
   useEffect(() => {
     if (!autoPlay) return
 
@@ -58,15 +66,7 @@ const HeroCarousel = ({
     }, autoPlayInterval)
 
     return () => clearInterval(interval)
-  }, [currentSlide, autoPlay, autoPlayInterval])
-
-  const handleNextSlide = () => {
-    setIsTransitioning(true)
-    setTimeout(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length)
-      setIsTransitioning(false)
-    }, 300)
-  }
+  }, [currentSlide, autoPlay, autoPlayInterval, handleNextSlide])
 
   const handlePrevSlide = () => {
     setIsTransitioning(true)

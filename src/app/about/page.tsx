@@ -25,14 +25,14 @@ export default function About() {
               
               <p className={styles.paragraph}>
                 Chinchillas Screen Porches is an outdoor living company that was founded in 2015 with the goal of making the home 
-                improvement process easier and more rewarding for customers. Since then, we've completed thousands of 
+                improvement process easier and more rewarding for customers. Since then, we&apos;ve completed thousands of 
                 projects and expanded into locations across the region, which we believe speaks to the incredible service 
                 we provide.
               </p>
 
               <p className={styles.paragraph}>
-                If you're interested in upgrading your home with a new screen porch, pool enclosure, sunroom, patio cover, or 
-                other outdoor living addition, there's no better company for you to call. We specialize in creating beautiful, 
+                If you&apos;re interested in upgrading your home with a new screen porch, pool enclosure, sunroom, patio cover, or 
+                other outdoor living addition, there&apos;s no better company for you to call. We specialize in creating beautiful, 
                 functional outdoor spaces that protect you from insects while maintaining stunning views of your surroundings.
               </p>
 
